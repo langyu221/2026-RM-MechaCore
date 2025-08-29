@@ -720,10 +720,11 @@
           "beforeBuildTasks": [],
           "afterBuildTasks": [],
           "global": {
+            "use-microLIB": false,
             "output-debug-info": "enable"
           },
           "c/cpp-compiler": {
-            "optimization": "level-0",
+            "optimization": "level-1",
             "one-elf-section-per-function": true,
             "c99-mode": true,
             "C_FLAGS": "--diag_suppress=1 --diag_suppress=1295",
@@ -735,7 +736,10 @@
             "$outputTaskExcludes": [
               ".bin"
             ],
-            "output-format": "elf"
+            "output-format": "elf",
+            "xo-base": "",
+            "ro-base": "",
+            "rw-base": ""
           }
         }
       }
